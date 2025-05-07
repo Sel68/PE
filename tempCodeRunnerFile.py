@@ -9,3 +9,6 @@ def sieve(hi=int(1e6)):
         if is_prime[p]:
             is_prime[p*p::p] = False
     return is_prime
+
+for idx, p in enumerate(sieve(20)):
+    print(idx, p)
